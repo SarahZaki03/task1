@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body> 
+    <section class="container my-4 border p-3 shadow">
+        <div>
+            <button class="btn btn-primary mb-4">hide form</button>
+        </div>
+		<form id = "addForm">
+            <div class="mb-3" id="userName">
+                <input name="name" placeholder="name" class="form-control">
+            </div>
+            <div class="mb-3" id ="address">
+                <input name="address" placeholder="address" class="form-control">
+            </div>
+            <div class="mb-3" id="balance">
+                <input name="balance" placeholder="balance" class="form-control">
+            </div>
+            <div class="mb-3" id="accNum">
+                <input name="accNum" placeholder="accNum" class="form-control">
+            </div>
+            <div>
+                <input type="submit" value="add customer" class="btn btn-success">
+            </div>
+        </form>    
+    </section>
+    <section  class="container border p-3 shadow">
+		<div id="userDataWrap" class="row">
+		
+		</div>
+    </section>
+    <script src="js/adddata.js"></script>
+</body>
+</html>
