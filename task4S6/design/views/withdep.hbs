@@ -1,0 +1,24 @@
+{{>header}}
+{{>nav}}
+<section class="container my-5">
+    <h3 class="text-primary">{{title}}</h3>
+<form method="post">
+        <input type="hidden" name="type" value="{{type}}">
+    <div class="mb-3 ">
+        <input name="accountnumber" placeholder="account number" class="form-control" value="{{id}}" readonly>
+    </div>
+    <div class="mb-3">
+        <input name="money" placeholder="money" class="form-control">
+    </div>
+    <div class="mb-3">
+        <input type="submit" value="{{title}}" class="btn btn-primary">
+    </div>
+</form>
+    {{#if status}}
+    <div class="alert alert-danger">
+        <p>{{message}}</p>
+    </div>
+    {{/if}}
+</section>
+
+{{>footer}}
